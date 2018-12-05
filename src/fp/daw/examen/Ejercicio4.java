@@ -1,5 +1,8 @@
 package fp.daw.examen;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Ejercicio4 {
 
 	/* 
@@ -12,7 +15,19 @@ public class Ejercicio4 {
 	 * Finalmente retornará el array.
 	 */
 	
-	public static ...
+	public static int [] arrayAleatorioOrdenado(int [] a) {
+		Random r = new Random(975);
+		
+		for (int i = 0; i < a.length ; i++) {
+			a [i] = r;
+		}
+		int n = 0;
+		for (int i = 0; i < a.length ; i++) {
+			if (a [i] > a [n] ) {
+				
+			}
+		}
+	}
 	
 	/*
 	 * 0,25 puntos
@@ -22,7 +37,7 @@ public class Ejercicio4 {
 	 */
 	
 	public static void main(String[] args) {
-		
+		Scanner teclado = new Scanner(System.in);
 
 	}
 

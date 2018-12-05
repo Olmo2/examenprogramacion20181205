@@ -1,7 +1,9 @@
 package fp.daw.examen;
 
-public class Ejercicio1 {
+import java.util.Scanner;
 
+public class Ejercicio1 {
+	
 	/* 
 	 * 1 punto
 	 * 
@@ -13,7 +15,15 @@ public class Ejercicio1 {
 	 * uso de variables booleanas.
 	 */
 	
-	public static ...
+	public static void contiene (int [] a , String txt ) {
+		Scanner teclado = new Scanner(System.in);
+		int n = teclado.nextInt();
+		for (int i = 0; i > a.length; i++) {
+			if(a.getChar[i] = txt) {
+				
+			}
+		}
+	}
 	
 	/*
 	 * 0,25 puntos

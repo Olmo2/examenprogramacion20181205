@@ -1,5 +1,7 @@
 package fp.daw.examen;
 
+import java.util.Scanner;
+
 public class Ejercicio5 {
 
 	/* 
@@ -23,8 +25,44 @@ public class Ejercicio5 {
 	 */
 	
 	public static void main(String[] args) {
+		int cantidad ;
+	
 		
-
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("¿Qué Cantidad que deseas desglosar? ");
+		cantidad = teclado.nextInt();
+		if (cantidad > 0) {
+			if(cantidad / 500 > 0) {
+				System.out.println(cantidad / 500 + " billetes de 500 euros.");
+			}
+			if((cantidad -= 500 * (cantidad / 500)) / 200 > 0) {
+				System.out.println(cantidad / 200 + " billetes de 200 euros.");
+			}
+			if((cantidad -= 200 * (cantidad / 200)) / 100 > 0) {
+				System.out.println(cantidad / 100 + " billetes de 100 euros.");
+			}
+			if((cantidad -= 100 * (cantidad / 100)) / 50 > 0) {
+				System.out.println(cantidad / 50 + " billetes de 50 euros.");
+			}
+			if((cantidad -= 50 * (cantidad / 50)) / 20 > 0) {
+				System.out.println(cantidad/ 20 + " billetes de 20 euros.");
+			}
+			if((cantidad -= 20 * (cantidad / 20)) / 10 > 0) {
+				System.out.println(cantidad/ 10 + " billetes de 10 euros.");
+			}
+			if((cantidad -= 10 * (cantidad / 10)) / 5 > 0) {
+				System.out.println(cantidad / 5 + " billetes de 5 euros.");
+			}
+			if((cantidad -= 5 * (cantidad / 5)) / 2 > 0) {
+				System.out.println(cantidad / 2 + " monedas de 2 euros.");
+			}
+			if((cantidad -= 2 * (cantidad / 2)) / 1 > 0) {
+				System.out.println(cantidad / 1 + " monedas de 1 euro.");
+		}
+		}else {
+			System.out.println("Introduce una cantidad positiva porfavor: ");
+			cantidad = teclado.nextInt();
 	}
-
+	}
 }
