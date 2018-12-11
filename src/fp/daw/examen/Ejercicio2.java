@@ -10,8 +10,15 @@ public class Ejercicio2 {
 	 * un vector de caracteres de la misma longitud que la cadena recibida que 
 	 * contenga los mismos caracteres que ésta y en el mismo orden. 
 	 */
-	
-	public static ...
+	// Char -> array de caracteres
+	public static char [] stringToArray(String cadena) {
+		//Declaramos un vector de caracteres con la longitud de la cadena
+		char [] vector = new char [cadena.length()];
+		for(int i=0; i< vector.length; i++)
+			// a cada posicion del vector se le asigna un caracter del String
+			vector[i] = cadena.charAt(i);
+		return vector;
+	}
 	
 	
 	/*
@@ -22,8 +29,10 @@ public class Ejercicio2 {
 	 */
 	
 	public static void main(String[] args) {
-		
-
+		//llamamos al metodo
+		char [] vector = stringToArray("hola");
+		for(int i=0; i< vector.length; i++)
+			System.out.println(vector[i]);
 	}
 
 }

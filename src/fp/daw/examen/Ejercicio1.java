@@ -15,15 +15,24 @@ public class Ejercicio1 {
 	 * uso de variables booleanas.
 	 */
 	
-	public static void contiene (int [] a , String txt ) {
-		Scanner teclado = new Scanner(System.in);
-		int n = teclado.nextInt();
-		for (int i = 0; i > a.length; i++) {
-			if(a.getChar[i] = txt) {
-				
-			}
+	public static boolean contiene (String [] vector , String txt ) {
+//		for (int i=0; i < vector.length; i++) 
+//			if (txt.equals(vector[i])) 
+//				return true;	
+//			return false;
+		
+		int i =0;
+		while(i < vector.length && !txt.equals(vector[i]) )
+			i++;
+	
+//		if (i < vector.length)
+//			return true;
+//		else 
+//			return false;
+		
+		return i < vector.length;
 		}
-	}
+
 	
 	/*
 	 * 0,25 puntos
@@ -34,7 +43,8 @@ public class Ejercicio1 {
 	
 	public static void main(String[] args) {
 		
-
+		String [] vector = {"c1" , "c3" , "c4", "c5"};
+		System.out.println(contiene(vector , "hola"));
 	}
 
 }
